@@ -5,5 +5,5 @@ services: # Telling Travis that we would need docker services or Docker to be in
 before_install: # A series of command before out tests are run, before deploying the project or run our tests
   - docker build -t krishnasai2389/docker-react -f Dockerfile.dev .
 
-script: # Suppose to contain series of command we want to executes
+script: # Suppose to contain series of command we want to execute
   - docker run -e CI=true krishnasai2389/docker-react npm run test 
